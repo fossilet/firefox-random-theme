@@ -8,6 +8,12 @@ It loads privileged browser-context JavaScript through
 [fx-autoconfig](https://github.com/MrOtherGuy/fx-autoconfig) and modifies both
 the Firefox application bundle and your profile.
 
+## Status
+
+Proof of concept, validated against Firefox 155/156 on macOS. The `install.sh`
+and `uninstall.sh` helpers are macOS-only; the module itself is not tied to a
+platform but has not been tested elsewhere.
+
 ## Requirements
 
 - macOS, Firefox 141 or newer with the built-in wallpaper feature (validated
@@ -145,3 +151,8 @@ After uninstalling:
   wallpaper.
 - **Enterprise-locked preferences** cannot be changed. The module logs a warning
   and leaves the page unchanged.
+
+## License
+
+MIT, see [LICENSE](LICENSE). fx-autoconfig is downloaded at install time and
+remains under its own MPL-2.0 license; it is not included in this repository.
